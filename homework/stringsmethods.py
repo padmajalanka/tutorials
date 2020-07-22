@@ -69,7 +69,7 @@ b1 = "NIGHT"
 print(a1+b1)
 print(a1 + " "+b1)
 
-###format(
+###format()
 cars = 2
 color= "Red"
 model = "Toyota"
@@ -84,6 +84,91 @@ print("substring toyota is:",mystore1.index('toyota'))
 #### Escape() An escape character is a backslash \ followed by the character you want to insert.
 sen = "they are called very\"tasty\" cookies."
 print(sen)
+#####CAPITALIZE()  Converts first character to uppercase.
+todaystopic = """true friendship comes when silence between the two is comfortble.
+                A friend never says i told you so even when they did."""
+print(todaystopic.capitalize())
+
+## Converts string into lowercase
+print(todaystopic.casefold())
+
+### center()    returns a centerstring:
+todaystopic = "A friend never says i told you so even when they did"
+print(todaystopic.center(80, "$"))
+
+######count() number of times specified item comes in the string
+todaystopic = """true friendship comes when silence between the two is comfortble.
+                A friend never says i told you so even when they did."""
+print(todaystopic.count("when"))
+
+#####Encode() returns encoded version of the string
+print(todaystopic.encode())
+
+######Endswith()   Returns true if the string ends with the specified value
+print(todaystopic.endswith("."))
+
+#####expandtabs() sets the tab size of the string
+todaystopic ="""true friendship comes\t when silence between \tthe two is comfortble.
+                A friend never says\ ti told you so even when they did."""
+print(todaystopic.expandtabs(3))
+
+#####find()searches the string for specified value
+print(todaystopic.find("when"))
+
+#######format()
+chocolates = 10
+company  = "Hershys"
+week = 4
+myorder = "i ordered {} chocates {} of company {} weeks back."
+myorder1 = "i ordered {0} chocolates {1} of company {2} weeks back."
+print(myorder.format(chocolates,company,week))
+print(myorder1.format(company,week,chocolates))
+
+#####index()
+todaystopic = """true friendship comes when silence between the two is comfortble.
+                A friend never says i told you so even when they did."""
+print(todaystopic.index("silence"))
+print(todaystopic.index("d"))
+print(todaystopic.index("comes", 15 , 30))    ###by giving substring start and end index
+###print(todaystopic.index(g)) gives error
+#if we use find it will give -1
+print(todaystopic.find("g"))
+
+ ###isalnum   Returns True if all characters in the string are alphanumeric
+print(todaystopic.isalnum())
+
+###isalpoha     Returns True if all characters in the string are in the alphabet
+print(todaystopic.isalpha())
+
+##isdecimal()       Returns True if all characters in the string are decimals
+print(todaystopic.isdecimal())
+
+###isidentifier() Returns True if the string is an identifier
+print(todaystopic.isidentifier())
+
+# islower()	Returns True if all characters in the string are lower case
+print(todaystopic.islower())
+# isnumeric()	Returns True if all characters in the string are numeric
+print(todaystopic.isnumeric())
+# isprintable()	Returns True if all characters in the string are printable
+print(todaystopic.isprintable())
+# isspace()	Returns True if all characters in the string are whitespaces
+print(todaystopic.isspace())
+# istitle()	Returns True if the string follows the rules of a title
+print(todaystopic.istitle())
+# isupper()	Returns True if all characters in the string are upper case
+print(todaystopic.isupper())
+
+
+
+
+
+
+
+
+
+
+
 
 
 
