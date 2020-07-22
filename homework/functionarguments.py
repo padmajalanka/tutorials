@@ -137,3 +137,38 @@ def cal(a, b, c):
 dict = {'a': 'cricket', 'b': 'basketball', 'c': 'john'}
 cal(**dict)
 
+
+##default parameter value
+def select(state = "pennysylvania"):
+    print("I am from " + state)
+
+
+
+select("austin")
+select("texas")
+select()
+select("florida")
+
+##pass()
+def go():
+    pass
+
+
+##Passing a List as an Argument
+def dinner(varieties):
+    for x in varieties:
+        print(x)
+
+
+food = ["rice", "dal", "curry"]
+dinner(food)
+
+
+##ex
+def my_function(food):
+    for x in food:
+        print(x)
+
+
+fruits = ["apple", "banana", "peach"]
+my_function(fruits)
