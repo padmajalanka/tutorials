@@ -85,3 +85,4 @@ print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
 list_str = [ "hi",'how','why','what','when','where','was','is']
 modified_list = list(map(lambda x: x [::-1], list_str))
 print("modified_list:" , modified_list)
+print("*********************")
