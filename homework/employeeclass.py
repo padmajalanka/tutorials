@@ -26,9 +26,15 @@ class employee:
         self.emp_salary = pay
         print(self.emp_name,"is worked for",self.emp_no_of_days_work,"out of ",self.total_no_of_days,"salary is " ,  self.emp_salary)
 
+    def title(self,name,id_of_employee,position_employee):
+        self.emp_id = id_of_employee
+        self.emp_position = position_employee
+        print(self.emp_name,"have",self.emp_id ,"is","in position of",self.emp_position)
+
 
 
 obj = employee()
 obj.work("padmaja", "programmer")
 obj.attendance("padmaja","15 days","20 days")
 obj.wages("padmaja","15 days", "20 days","salary")
+obj.title("padmaja","id of 12345","teamlead")
